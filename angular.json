@@ -33,7 +33,7 @@
             "styles": [
               "src/styles.scss",
               "node_modules/summernote/dist/summernote-lite.min.css"
-            ],
+            ], // https://angular.io/guide/workspace-config#styles-and-scripts-configuration
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/summernote/dist/summernote-lite.min.js"
