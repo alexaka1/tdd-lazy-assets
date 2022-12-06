@@ -34,7 +34,7 @@
               "src/styles.scss",
               {
                 "bundleName": "summernote",
-                "input": "node_modules/summernote/dist/summernote-lite.min.css",
+                "input": "node_modules/summernote/dist/summernote-lite.css",
                 "inject": false
               }
             ], // https://angular.io/guide/workspace-config#styles-and-scripts-configuration
@@ -42,7 +42,7 @@
               "node_modules/jquery/dist/jquery.min.js",
               {
                 "bundleName": "summernote",
-                "input": "node_modules/summernote/dist/summernote-lite.min.js",
+                "input": "node_modules/summernote/dist/summernote-lite.js",
                 "inject": false
               }
             ]
