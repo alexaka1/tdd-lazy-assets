@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import {SummernoteOptions} from "ngx-summernote/lib/summernote-options";
+import { SummernoteOptions } from 'ngx-summernote/lib/summernote-options';
 
 @Component({
   templateUrl: './editor.component.html',
-  styleUrls: ['./editor.component.scss']
+  styleUrls: ['./editor.component.scss'],
 })
 export class EditorComponent implements OnInit {
-
-  config : SummernoteOptions = {
+  config: SummernoteOptions = {
     placeholder: '',
     tabsize: 2,
     // height: '200px',
@@ -15,16 +14,33 @@ export class EditorComponent implements OnInit {
     toolbar: [
       ['misc', ['codeview', 'undo', 'redo']],
       ['style', ['bold', 'italic', 'underline', 'clear']],
-      ['font', ['bold', 'italic', 'underline', 'strikethrough', 'superscript', 'subscript', 'clear']],
+      [
+        'font',
+        [
+          'bold',
+          'italic',
+          'underline',
+          'strikethrough',
+          'superscript',
+          'subscript',
+          'clear',
+        ],
+      ],
       ['fontsize', ['fontname', 'fontsize', 'color']],
       ['para', ['style', 'ul', 'ol', 'paragraph', 'height']],
-      ['insert', ['table', 'picture', 'link', 'video', 'hr']]
+      ['insert', ['table', 'picture', 'link', 'video', 'hr']],
     ],
-    fontNames: ['Helvetica', 'Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Roboto', 'Times']
-  }
-  constructor() { }
+    fontNames: [
+      'Helvetica',
+      'Arial',
+      'Arial Black',
+      'Comic Sans MS',
+      'Courier New',
+      'Roboto',
+      'Times',
+    ],
+  };
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

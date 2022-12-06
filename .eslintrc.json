@@ -63,48 +63,13 @@
       }
     },
     // https://github.com/angular-eslint/angular-eslint#notes-for-eslint-plugin-prettier-users
-    // Do not apply @angular-eslint/template rules and prettier within the same override block.
     {
-      "files": [
-        "*.html"
-      ],
+      "files": ["*.html"],
       "extends": [
-        "plugin:@angular-eslint/template/recommended"
+        "plugin:@angular-eslint/template/recommended",
+        "plugin:prettier/recommended" // <--- here we inherit from the recommended setup from eslint-plugin-prettier for HTML
       ],
       "rules": {
-        "@angular-eslint/template/eqeqeq": [
-          "error",
-          {
-            "allowNullOrUndefined": true
-          }
-        ],
-        "max-len": [
-          "warn",
-          {
-            "code": 120
-          }
-        ]
-      }
-    },
-    // NOTE: WE ARE NOT APPLYING @ANGULAR-ESLINT/TEMPLATE IN THIS OVERRIDE, ONLY PRETTIER https://github.com/angular-eslint/angular-eslint
-    {
-      "files": [
-        "*.html"
-      ],
-      "excludedFiles": [
-        "*inline-template-*.component.html"
-      ],
-      "extends": [
-        "plugin:prettier/recommended"
-      ],
-      "rules": {
-        // NOTE: WE ARE OVERRIDING THE DEFAULT CONFIG TO ALWAYS SET THE PARSER TO ANGULAR (SEE BELOW)
-        "prettier/prettier": [
-          "error",
-          {
-            "parser": "angular"
-          }
-        ],
         "max-len": [
           "warn",
           {

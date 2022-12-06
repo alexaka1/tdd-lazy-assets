@@ -2,19 +2,13 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   template: `
-    <p>
-      hello works!
-    </p>
+    <p>hello works!</p>
     <button routerLink="/admin">Admin</button>
   `,
-  styles: [
-  ]
+  styles: [],
 })
 export class HelloComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
