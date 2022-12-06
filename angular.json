@@ -35,7 +35,7 @@
               {
                 "bundleName": "summernote",
                 "input": "node_modules/summernote/dist/summernote-lite.css",
-                "inject": false
+                "inject": true
               }
             ], // https://angular.io/guide/workspace-config#styles-and-scripts-configuration
             "scripts": [
@@ -67,6 +67,13 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "inlineCritical": true,
+                  "minify": true
+                }
+              },
               "outputHashing": "all"
             },
             "development": {

@@ -81,7 +81,7 @@ export class EditorComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.loadStyle();
+    // this.loadStyle();
     this.loadDynamicScript().then(
       (value) => {
         console.log('script loaded');
