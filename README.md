@@ -1,6 +1,7 @@
 # LazyAssets
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.10.
+`npx -p @angular/cli@13 ng new lazy-assets --routing --strict --style scss --interactive`
 
 ## Development server
 
