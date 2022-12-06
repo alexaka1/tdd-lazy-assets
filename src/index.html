@@ -6,8 +6,25 @@
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script>
+      // debugger;
+      console.log("index");
+      setTimeout(function () {
+        $(document).on("ready", function () {
+          console.log("hello works!");
+        });
+        console.log($);
+        console.log(jQuery);
+        var body = $("body");
+        console.log(body);
+        $(".asdfg").summernote({
+          airMode: false,
+        });
+      }, 3000);
+    </script>
   </head>
   <body>
     <app-root></app-root>
+    <div class="asdfg"></div>
   </body>
 </html>
