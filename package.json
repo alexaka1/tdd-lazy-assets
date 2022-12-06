@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "lint:fix": "ng lint --fix"
   },
   "private": true,
   "dependencies": {
@@ -19,7 +20,10 @@
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
+    "jquery": "^3.6.1",
+    "ngx-summernote": "^0.8.8",
     "rxjs": "~7.5.0",
+    "summernote": "^0.8.20",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
